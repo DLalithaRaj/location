@@ -1,0 +1,94 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateLocationInput {
+  """Address line1"""
+  addressline: String!
+
+  """Name of city"""
+  city: String
+
+  """Country name"""
+  country: String
+
+  """latitude Value of location"""
+  latitude: String
+
+  """Unique Location Code"""
+  locationCode: Int!
+
+  """longitude value of location"""
+  longitude: String
+
+  """Region of the city"""
+  region: String
+
+  """Country Zipcode """
+  zipCode: Int!
+}
+
+type Location {
+  """location id"""
+  _id: String!
+
+  """Address line1"""
+  addressline: String!
+
+  """Name of city"""
+  city: String
+
+  """Country name"""
+  country: String
+
+  """latitude Value of location """
+  latitude: String
+
+  """Unique Location Code"""
+  locationCode: Int!
+
+  """longitude value of location"""
+  longitude: String
+
+  """Region of the city"""
+  region: String
+
+  """Country Zipcode """
+  zipCode: Int!
+}
+
+type Mutation {
+  createLocation(createLocationInput: CreateLocationInput!): Location!
+  deleteLocation(id: Int!): Location!
+  updateLocation(id: Int!, updateLocationInput: UpdateLocationInput!): Location!
+}
+
+type Query {
+  location(id: Int!): Location!
+}
+
+input UpdateLocationInput {
+  """Address line1"""
+  addressline: String!
+
+  """Name of city"""
+  city: String
+
+  """Country name"""
+  country: String
+
+  """latitude Value of location """
+  latitude: String
+
+  """Unique Location Code"""
+  locationCode: Int!
+
+  """longitude value of location"""
+  longitude: String
+
+  """Region of the city"""
+  region: String
+
+  """Country Zipcode"""
+  zipCode: Int!
+}
